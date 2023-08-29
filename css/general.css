@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Satoshi, sans-serif;
+    box-sizing: border-box;
+    
+}
+.body{
+    background-color: rgba(224, 201, 245, 0.3);
+}
+@media only screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .head{
+        height: 100px;
+        
+    }
+    
+    .main_container{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .but{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        width: 768px;
+        height: auto;
+        background-color: #fff;
+        position: relative;
+        text-align: right;
+        z-index: 3;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.2s;
+        left: -50px;
+        padding-top: 130px;
+        margin-left: 0px;
+        padding-left:30px;
+    }
+    .container{
+        display: inline;
+        position: absolute;
+        left: 0;
+        top: -35px;
+        cursor: pointer;
+        z-index: 4;
+        
+    }
+    .head img{
+        margin-right: 220px;
+        z-index: 5;
+        position: absolute;
+        top: 30px;
+    }
+    .bar1, .bar2, .bar3{
+        height: 3px;
+        width: 25px;
+        margin-left: 80%;
+        transition: 0.2s;
+        border-radius: 50px;
+    }
+    .change .bar1 {
+        transform: translate(0, px) rotate(-45deg);
+    }
+      
+    .change .bar2 {opacity: 0;}
+      
+    .change .bar3 {
+        transform: translate(0, -7px) rotate(45deg);
+    }
+    ul{
+        display: grid;
+        padding: 10px 0;  
+        font-size: 20px;   
+        
+    }
+    ul li{
+        font-size: 30px;
+        padding: 5px;
+        padding-right: -10px;
+    }
+    .nav-menu-line{
+        display: none;
+    }
+    .cart{
+        font-size: 30px;
+        padding: 5px;
+        width: auto;
+        
+          
+    }
+    .but div .cart{
+        margin-left: -20px;
+    }
+    .head-button{
+        font-weight: 500;
+        margin-right: 70px;
+        margin-left: 40px;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    .head-button-1 {
+        height: auto;
+        width: fit-content;
+        padding: 20px;
+        border-radius: 32px;
+        border: 2px solid rgba(226, 217, 217, 0.5);
+        text-align: center;
+        vertical-align: middle;
+        vertical-align: text-bottom;
+        transition-property: all 0.3s;    
+    }
+    .head-button-1 p{
+        vertical-align: middle;
+        margin-top: -5px; 
+    }
+    .head-button-2 p{
+        vertical-align: middle;
+        margin-top: -4px; 
+    }
+    .head-button-2{
+        height: auto;
+        width: fit-content;
+        border-radius: 32px;
+        background-color: yellow;
+        border: 0;
+        padding: 20px;
+        text-align: center;
+        transition-property: all 0.3s;
+        
+       
+    }
+    .change.but{
+        opacity: 1;
+        right: 0px;
+        pointer-events: fill;
+    } 
+    .header{
+        display: grid;
+        height: 100vh;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .left-center p{
+        margin-left: 15px;
+        font-weight: 400;
+       
+        
+    }
+    .header-center h1{
+        font-size: 40px;
+        width: 90%;
+        line-height: 50px;
+        margin-top: -280px;
+
+    }
+    .header-center p{
+        font-size: 20px;
+        width: 90%;
+        border-bottom: 1px solid rgba(41, 41, 48, 0.1);
+        padding-bottom: 30px;
+        
+    }
+    .header-right{
+        margin-left: 40px;
+        margin-top: -400px;
+        width: 50%;
+    }
+    .nav-picture{
+        margin-top: -220px;
+    }
+    .para{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .para .testimonials{
+        margin-left: 0;
+        display: block;
+        margin: 0;
+        margin-left: -50px;
+        font-size: 16px;
+        
+    }
+    .workflow p{
+        font-size: 35px;
+        line-height: 40px;
+        margin-right: 0;
+        display: block;
+        margin-left: -100px;
+        width: 50%;
+        height: auto;
+        margin-top: 40px;
+    }
+    .avarta-main{
+        position: absolute;
+        margin-top: -1200px;
+        left: 60%;
+    }
+    .arrow-forturn{
+       margin-top: -50px; 
+    }
+    .arrow{
+        position: absolute;
+    }
+    .footer-logo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
+    .footer-logo p{
+        width: 90%;
+        margin-top: -10px;
+    } 
+    .footer-button{
+        width: 90%;
+        font-size: 12px;
+    } 
+    .copy{
+        display: grid;
+        width: 90%;
+        margin-top: 50px;
+    }
+    .list{
+        margin-left: -40px;
+        margin-top: 130px;
+        
+    }
+    .copy p{
+        position: absolute;
+        margin-top: -65px;
+        font-size: 14px;
+
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width:1100px){
+    body{
+        overflow-x: hidden;
+    }
+    .head{
+        height: 100px;
+        margin-left: 60px;
+    }
+    
+    .main_container{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    .but{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        width: 1200px;
+        height: auto;
+        background-color: #fff;
+        position: relative;
+        text-align: right;
+        z-index: 3;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.2s;
+        left: -50px;
+        padding-top: 120px;
+        margin-left: 0px;
+        padding-left:50px;
+    }
+    .container{
+        display: inline;
+        position: absolute;
+        left: 0;
+        top: -35px;
+        cursor: pointer;
+        z-index: 4;
+        
+    }
+    .head img{
+        margin-right: 220px;
+        z-index: 5;
+        position: absolute;
+        top: 30px;
+    }
+    .bar1, .bar2, .bar3{
+        height: 3px;
+        width: 25px;
+        margin-left: 80%;
+        transition: 0.2s;
+        border-radius: 50px;
+    }
+    .change .bar1 {
+        transform: translate(0, px) rotate(-45deg);
+    }
+      
+    .change .bar2 {opacity: 0;}
+      
+    .change .bar3 {
+        transform: translate(0, -7px) rotate(45deg);
+    }
+    ul{
+        display: grid;
+        padding: 15px 0;  
+        
+        
+    }
+    ul li{
+        font-size: 30px;
+        padding-right: -10px;
+    }
+    .nav-menu-line{
+        display: none;
+    }
+    .cart{
+        font-size: 30px;
+        padding: 10px;
+        width: auto;
+        
+          
+    }
+    .but div .cart{
+        margin-left: -5px;
+    }
+    .head-button{
+        font-weight: 500;
+        margin-right: 70px;
+        margin-left: 40px;
+        margin-bottom: 60px;
+        margin-top: 20px;
+    }
+    .head-button-1 {
+        height: auto;
+        width: fit-content;
+        padding: 20px;
+        border-radius: 32px;
+        border: 2px solid rgba(226, 217, 217, 0.5);
+        text-align: center;
+        vertical-align: middle;
+        vertical-align: text-bottom;
+        transition-property: all 0.3s;    
+    }
+    .head-button-1 p{
+        vertical-align: middle;
+        margin-top: -5px; 
+    }
+    .head-button-2 p{
+        vertical-align: middle;
+        margin-top: -4px; 
+    }
+    .head-button-2{
+        height: auto;
+        width: fit-content;
+        border-radius: 32px;
+        background-color: yellow;
+        border: 0;
+        padding: 20px;
+        text-align: center;
+        transition-property: all 0.3s;
+        
+       
+    }
+    .change.but{
+        opacity: 1;
+        right: 0px;
+        pointer-events: fill;
+    } 
+    .header{
+        display: grid;
+        height: 100vh;
+        width: 100%;
+        margin-left: 18px;
+        margin-top: 30px;
+    }
+    .left-center p{
+        margin-left: 18px;
+        
+        
+    }
+    
+    .header-center h1{
+        font-size: 65px;
+        width: 80%;
+        margin-top: -280px;
+        line-height: 50px;  
+    }
+    .header-center p{
+        font-size: 20px;
+        width: 80%;
+        border-bottom: 1px solid rgba(41, 41, 48, 0.1);
+        padding-bottom: 30px;
+    }
+    .header-right{
+        margin-top: -450px;
+        margin-left: 40px;
+        width: 50%;
+        position: relative;
+    }
+    .nav-picture{
+        margin-top: -300px;
+    }
+    .para{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 60px;
+        
+    }
+    .para .testimonials{
+        margin-left: 0;
+        display: block;
+        margin: 0;
+        margin-left: -50px;
+        font-size: 16px;
+        
+    }
+    .workflow p{
+        font-size: 35px;
+        line-height: 60px;
+        margin-right: 0;
+        display: block;
+        margin-left: -100px;
+        width: 85% ;
+        height: auto;
+        margin-top: -10px;
+    }
+    .marketing{
+        display: flex;
+        gap: 100px;
+        margin-left: -50px;
+    }
+    .arrow-forturn{
+        width: 100%;
+        display:flex;
+        gap: 100px;
+    }
+    .fortune{
+        width: 320px;
+        height: 70px;
+        margin-top: 60px;
+    }
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        margin-left: -180px;
+        
+    }
+    footer{
+        margin-left: 60px;
+    }
+    .footer-button{
+        margin-left: 100px;
+    }
+    .logo-footer p{
+        line-height: 25px;
+        margin-top: -20px;
+    }
+    .list{
+        margin-left: -25px;
+    }
+    .copy{
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            margin-left: 40px;
+            height: 100px;
+            width: 300px;
+            background-color: rgb(2, 2, 53);
+            position: relative;
+            
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 200px;
+            height: 50px;
+            padding-left: 70px;
+            padding-top: 15px;
+            background-color: rgb(2, 2, 53);
+            border-radius: 60px;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 2px;
+            border-top: 0.5s solid rgb(133, 131, 131);
+            border-left: 0.5s solid rgb(133, 131, 131);
+            transition: 0.5s;
+            
+        }
+
+       
+        .btn:hover{
+            margin-left: 70px;
+            margin-right: 0;
+            color: white;
+            
+        }
+        .main img{
+            position:absolute;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            left: 5px;
+            display: flex;
+            transition: 0.5s;
+            justify-content: center;
+            align-items: center;
+            color: rgb(2, 2, 53);
+            font-size: 1.5em;
+            z-index: 2;
+        }
+        .main:hover img{
+            left: 0px;
+            right: 70px;
+            color: white;
+        }
+        /*.btn:hover img{
+            left: calc(100% -220px);
+        }
+        .btn::after{
+            content:url("/arrow-right-long-solid.svg");
+            position: absolute;
+            width: 80px;
+            height: 100%;
+            border-radius: 50%;
+            z-index: 1;
+            background-color: beige;
+            transform: translateX(-170px) skewx(30deg);
+            transition: 0.7s ease-in-out
+        }
+        .btn:hover::after{
+            transform: translateX(170px) skewx(30deg);
+        }*/
+      </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>S/N</th>
+            <th>DATE</th>
+            <th>COMPANY NAME</th>
+            <th>SERVICE</th>
+            <th>STAFFS</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>JULY 30, 2023</td>
+            <td>EK DEV TECH</td>
+            <td>WEBSITE DEVELOPMENT</td>
+            <td>EKELE OLU</td>
+        </tr>
+    </table>
+    <div class="main">
+        <a href="#" class="btn">Discover More</a>
+        <img src="/arrow-right-long-solid.svg" alt="">
+        
+    </div>
+
+</body>
+</html>
